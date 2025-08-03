@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rei dos iPhones</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #FFD700;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    .banner {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg') no-repeat center center;
+      background-size: 120px;
+      background-color: #000;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-direction: column;
+    }
+    .banner h2 {
+      font-size: 3rem;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      color: #FFD700;
+    }
+    .grid-produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .produto {
+      background-color: #111;
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 10px;
+    }
+    .produto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .produto h3 {
+      color: #FFD700;
+      margin: 10px 0;
+    }
+    .produto p {
+      margin: 5px 0;
+    }
+    .produto a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .produto a:hover {
+      background-color: #e6c200;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    input, textarea {
+      background-color: #222;
+      color: #fff;
+    }
+    button {
+      background-color: #FFD700;
+      color: #000;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rei dos iPhones</h1>
+  </header>
+  <nav>
+    <a href="#checar-imei">Checagem de IMEI</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#loja">Loja</a>
+    <a href="#preco">Preços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="banner">
+    <h2>Rei dos iPhones</h2>
+  </div>
+  <section id="checar-imei">
+    <h2>Checagem de IMEI Completa</h2>
+    <p>Verifique a situação do seu iPhone antes de comprar. Segurança e transparência total.</p>
+    <a href="https://www.imeipro.info/" target="_blank" style="color:#FFD700;text-decoration:underline;">Ir para Checagem IMEI</a>
+  </section>
+  <section id="cursos">
+    <h2>Cursos Completos</h2>
+    <p>Aprenda a trabalhar com iPhones direto com os melhores. Técnicas de manutenção, desbloqueio e mais.</p>
+    <a href="https://hotm.art/gpsXJYMG" target="_blank" style="color:#FFD700;text-decoration:underline;">Ver cursos</a>
+  </section>
+  <section id="loja">
+    <h2>Loja</h2>
+    <p>Veja nossos modelos disponíveis:</p>
+    <div class="grid-produtos">
+      <!-- Lista de produtos será gerada aqui -->
+      <!-- PRODUTOS INSERIDOS AUTOMATICAMENTE -->
+      <!-- Exemplo de 1 produto -->
+      <script>
+        const produtos = [
+          {nome: 'iPhone 14 Plus', preco: 'R$ 670,00'},
+          {nome: 'RE-BYPASS Com Sinal (até 31/10/2024)', preco: 'R$ 235,00'},
+          {nome: 'iPhone 16 Pro Max', preco: 'R$ 870,00'},
+          {nome: 'iPhone 16 Pro', preco: 'R$ 840,00'},
+          {nome: 'iPhone 16 Plus', preco: 'R$ 745,00'},
+          {nome: 'iPhone 16', preco: 'R$ 720,00'},
+          {nome: 'iPhone 15 Pro Max', preco: 'R$ 830,00'},
+          {nome: 'iPhone 15 Pro', preco: 'R$ 780,00'},
+          {nome: 'iPhone 15 Plus', preco: 'R$ 700,00'},
+          {nome: 'iPhone 15', preco: 'R$ 670,00'},
+          {nome: 'iPhone 14 Pro Max', preco: 'R$ 725,00'},
+          {nome: 'iPhone 14 Pro', preco: 'R$ 700,00'},
+          {nome: 'XR / XS / XS MAX', preco: 'R$ 400,00'},
+          {nome: 'iPhone 14', preco: 'R$ 630,00'},
+          {nome: 'iPhone 13 Pro Max', preco: 'R$ 650,00'},
+          {nome: 'iPhone 13 Pro', preco: 'R$ 590,00'},
+          {nome: 'iPhone 13', preco: 'R$ 570,00'},
+          {nome: 'iPhone 13 Mini', preco: 'R$ 475,00'},
+          {nome: 'iPhone 12 Pro Max', preco: 'R$ 560,00'},
+          {nome: 'iPhone 12 Pro', preco: 'R$ 540,00'},
+          {nome: 'iPhone 12 / 12 Mini', preco: 'R$ 500,00'},
+          {nome: 'iPhone 11 Pro Max', preco: 'R$ 530,00'},
+          {nome: 'iPhone 11 Pro', preco: 'R$ 500,00'},
+          {nome: 'iPhone 11', preco: 'R$ 480,00'}
+        ];
+
+        const container = document.currentScript.parentElement;
+        produtos.forEach(produto => {
+          const el = document.createElement('div');
+          el.className = 'produto';
+          el.innerHTML = `
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+            <h3>iRemoval Pro 5.0 ${produto.nome}</h3>
+            <p><strong>Preço:</strong> ${produto.preco}</p>
+            <a href="https://api.whatsapp.com/send?phone=5515997685281&text=Olá! Quero o ${produto.nome}" target="_blank">Comprar</a>
+          `;
+          container.appendChild(el);
+        });
+      </script>
+    </div>
+  </section>
+  <section id="preco">
+    <div class="preco-box">
+      <h3>iRemoval PRO - Bypass Completo</h3>
+      <ul>
+        <li><strong>Compatível:</strong> XR até iPhone 16 Pro Max</li>
+        <li><strong>Status:</strong> Sem sinal / Completo</li>
+        <li><strong>Ativação:</strong> Inclui Jailbreak + SSH + Ativo</li>
+        <li><strong>Entrega:</strong> Imediata via WhatsApp</li>
+      </ul>
+      <a href="https://api.whatsapp.com/send?phone=5515997685281&text=Olá! Quero adquirir o Bypass Completo iRemoval PRO" target="_blank" style="color:#FFD700;text-decoration:underline;">Comprar agora</a>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Fale com a gente pelo WhatsApp: <strong>(15) 99768-5281</strong></p>
+    <form action="https://formspree.io/f/meqbgoyv" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Rei dos iPhones. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
